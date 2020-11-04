@@ -20,7 +20,7 @@ public class SpringCloudStreamPublisherApplication {
 
     @PostMapping("/publish")
     public CloudEvent publishEvent(@RequestBody CloudEvent cloudEvent) {
-        output.send(MessageBuilder.withPayload(cloudEvent).setHeader("Content-Type", "application/json").build());
+        output.send(MessageBuilder.withPayload(cloudEvent).build());
         return cloudEvent;
     }
 
