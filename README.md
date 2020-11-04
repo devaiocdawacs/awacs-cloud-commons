@@ -1,3 +1,5 @@
+![Maven Build](https://github.com/girishaiocdawacs/smart-pharmacy-event-management/workflows/Maven%20Build/badge.svg)
+
 ###### Apache-Kafka Binary Distribution [Download](http://apachemirror.wuchna.com/kafka/2.3.1/kafka_2.11-2.3.1.tgz).
 
 ###### Strat Zookeeper server
