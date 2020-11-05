@@ -19,5 +19,3 @@ jobs:
           java-version: 11.0.4
       - name: Maven Package
         run: mvn -B deploy
-	env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
