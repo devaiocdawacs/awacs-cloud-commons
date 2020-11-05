@@ -1,4 +1,4 @@
-name: Maven Build
+name: Deploy Github Package
 on:
   release:
     types:
@@ -8,7 +8,7 @@ on:
       - 'master'
 jobs:
   deploy:
-    name: Deploy artifact to Github Packages
+    name: Maven Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -19,3 +19,5 @@ jobs:
           java-version: 11.0.4
       - name: Maven Package
         run: mvn -B deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_UPLOAD_TOKEN }}
