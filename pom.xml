@@ -11,13 +11,21 @@
 	</parent>
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>smart-pharmacy-event-management</name>
 	<description>Event Management</description>
 
 
 	<modules>
-		<module>cloud-event-publisher</module>
-		<module>cloud-event-consumer</module>
+		<module>cloud-event-publisher-gcp-pubsub</module>
 	</modules>
+
+	<distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/octocat/hello-world</url>
+    </repository>
+  </distributionManagement>
+
 </project>
