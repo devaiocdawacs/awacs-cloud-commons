@@ -28,7 +28,7 @@ public class SpringCloudStreamGcpPubSubConfig {
 				new PubSubInboundChannelAdapter(pubSubTemplate, "awacsSubscription");
 		adapter.setOutputChannel(inputChannel);
 		adapter.setAckMode(AckMode.MANUAL);
-
+		adapter.setPayloadType(CloudEvent.class);
 		return adapter;
 	}
 
