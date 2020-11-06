@@ -18,7 +18,7 @@ jobs:
         with:
           java-version: 11.0.4 
       - name: Maven Package
-        run: mvn -B deploy
+        run: mvn -B deploy -DskipTests=true
         env:
           GITHUB_TOKEN: ${{ secrets.GH_UPLOAD_TOKEN }}
           GOOGLE_CLOUD_PROJECT: ${{secrets.GKE_PROJECT}}
