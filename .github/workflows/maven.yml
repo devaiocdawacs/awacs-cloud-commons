@@ -18,3 +18,6 @@ jobs:
           java-version: 11.0.4
       - name: Maven Package
         run: mvn -B clean verify -DskipTests=true
+        env:
+	   GOOGLE_CLOUD_PROJECT: ${{secrets.GKE_PROJECT}}
+           GOOGLE_APPLICATION_CREDENTIALS: ${{secrets.GKE_SA_KEY}}

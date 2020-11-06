@@ -21,3 +21,6 @@ jobs:
         run: mvn -B deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GH_UPLOAD_TOKEN }}
+	  GOOGLE_CLOUD_PROJECT: ${{secrets.GKE_PROJECT}}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{secrets.GKE_SA_KEY}}
+
