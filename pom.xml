@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.2</version>
 	
 	<name>smart-pharmacy-event-management</name>
 	
@@ -44,7 +44,7 @@
         <url>https://github.com/girishaiocdawacs/${project.artifactId}</url>
         <connection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</connection>
         <developerConnection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>smart-pharmacy-event-management-1.0.2</tag>
   </scm>
     
 </project>
