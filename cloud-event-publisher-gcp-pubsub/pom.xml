@@ -84,6 +84,26 @@
 		</dependencies>
 	</dependencyManagement>
 
+	
+	<distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub girishaiocdawacs Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/girishaiocdawacs/releases/${project.artifactId}</url>
+        </repository>
+		<snapshotRepository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/girishaiocdawacs/snapshots/${project.artifactId}</url>
+		</snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <url>https://github.com/girishaiocdawacs/smart-pharmacy-event-management</url>
+        <connection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</connection>
+        <developerConnection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</developerConnection>
+    </scm>
+
 	<build>
 		<plugins>
 			<plugin>
