@@ -18,7 +18,7 @@
 	
 
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
 
@@ -109,7 +109,7 @@
         <url>https://github.com/girishaiocdawacs/smart-pharmacy-event-management</url>
         <connection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</connection>
         <developerConnection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</developerConnection>
-      <tag>smart-pharmacy-event-management-0.0.5</tag>
+      <tag>HEAD</tag>
   </scm>
 
 	<build>
