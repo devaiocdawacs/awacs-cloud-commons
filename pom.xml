@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.4</version>
 	
 	<name>smart-pharmacy-event-management</name>
 	
@@ -31,12 +31,12 @@
         <repository>
             <id>github</id>
             <name>GitHub girishaiocdawacs Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/girishaiocdawacs/releases/</url>
+            <url>https://maven.pkg.github.com/girishaiocdawacs/</url>
         </repository>
 		<snapshotRepository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/girishaiocdawacs/snapshots/</url>
+			<url>https://maven.pkg.github.com/girishaiocdawacs/</url>
 		</snapshotRepository>
     </distributionManagement>
 

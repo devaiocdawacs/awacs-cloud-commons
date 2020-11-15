@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>1.0.4-SNAPSHOT</version>
+		<version>1.0.4</version>
 	</parent>
 	
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
@@ -85,31 +85,24 @@
         <repository>
             <id>github</id>
             <name>GitHub girishaiocdawacs Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/girishaiocdawacs/releases/</url>
+            <url>https://maven.pkg.github.com/girishaiocdawacs/</url>
         </repository>
 
 		<snapshotRepository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/girishaiocdawacs/snapshots/</url>
+			<url>https://maven.pkg.github.com/girishaiocdawacs/</url>
 		</snapshotRepository>
     </distributionManagement>
 
-    <scm>
-        <url>https://github.com/girishaiocdawacs/smart-pharmacy-event-management</url>
-        <connection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</connection>
-        <developerConnection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.0-M1</version>
-			</plugin>
-		</plugins>
-	</build>
+   <build>
+ 	<plugins>
+	   <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-release-plugin</artifactId>
+		<version>3.0.0-M1</version>
+	   </plugin>
+	</plugins>
+   </build>
 
 </project>
