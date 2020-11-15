@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.3-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
@@ -99,7 +99,7 @@
         <url>https://github.com/girishaiocdawacs/smart-pharmacy-event-management</url>
         <connection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</connection>
         <developerConnection>scm:git:https://github.com/girishaiocdawacs/smart-pharmacy-event-management.git</developerConnection>
-      <tag>smart-pharmacy-event-management-1.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
 	<build>
