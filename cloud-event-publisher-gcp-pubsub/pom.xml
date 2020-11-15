@@ -5,15 +5,8 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>0.0.6-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	
-	
-	<!--parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.5.RELEASE</version>
-	</parent-->
 	
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
 	<packaging>jar</packaging>
