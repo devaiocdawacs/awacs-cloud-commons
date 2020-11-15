@@ -2,10 +2,7 @@
 name: Maven Deploy To Github Package
 
 on:
-  push:
-    branches: 
-      - master
-  release:
+ release:
     types: [created]
 
 jobs:
