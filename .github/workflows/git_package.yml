@@ -23,7 +23,11 @@ jobs:
       with:
         java-version: 11.0.4
     - name: Github Maven Deploy
-      run: mvn --settings settings.xml -B clean package release:prepare release:perform -DskipTests=true
+      run:|
+         
+	 git config --global user.email "girish.mahajan@aiocdawacs.com"
+	 git config --global user.name "girishaiocdawacs"
+         mvn --settings settings.xml -B clean package release:prepare release:perform -DskipTests=true
       env:
         GITHUB_USERNAME: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
