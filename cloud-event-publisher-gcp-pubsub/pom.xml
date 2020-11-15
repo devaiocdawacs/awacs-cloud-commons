@@ -3,13 +3,16 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>0.0.3</version>
+		<version>0.0.3-SNAPSHOT</version>
 	</parent>
-	<groupId>com.aiocdawacs</groupId>
+	
+
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
+	
 	<packaging>jar</packaging>
 	
 
@@ -18,8 +21,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-		<spring-cloud-gcp.version>1.2.5.RELEASE</spring-cloud-gcp.version>
+		<spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+		<spring-cloud-gcp.version>1.2.6.RELEASE</spring-cloud-gcp.version>
 	</properties>
 
 	<dependencies>
@@ -81,14 +84,6 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub girishaiocdawacs Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/girishaiocdawacs/${project.artifactId}</url>
-        </repository>
-    </distributionManagement>
-    
 	<build>
 		<plugins>
 			<plugin>

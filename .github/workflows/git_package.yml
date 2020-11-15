@@ -25,7 +25,7 @@ jobs:
     - name: Github Maven Deploy
       run: mvn --settings settings.xml -B deploy -DskipTests=true
       env:
-        GITHUB_USERNAME: "girishaiocdawacs"
+        GITHUB_USERNAME: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOOGLE_CLOUD_PROJECT: ${{secrets.GKE_PROJECT}}
         GOOGLE_APPLICATION_CREDENTIALS: ${{secrets.GKE_SA_KEY}}

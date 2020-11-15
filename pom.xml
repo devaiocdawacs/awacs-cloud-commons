@@ -3,7 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<packaging>pom</packaging>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -13,10 +15,15 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.3-SNAPSHOT</version>
+	
 	<name>smart-pharmacy-event-management</name>
-	<description>Event Management</description>
-
+	
+	<description>Awacs Cloud Event Management</description>
+	
+	<properties>
+		<project.scm.id>github</project.scm.id>
+	</properties>
 
 	<modules>
 		<module>cloud-event-publisher-gcp-pubsub</module>
@@ -26,12 +33,12 @@
         <repository>
             <id>github</id>
             <name>GitHub girishaiocdawacs Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/girishaiocdawacs/${project.artifactId}</url>
+            <url>https://maven.pkg.github.com/girishaiocdawacs/releases/${project.artifactId}</url>
         </repository>
 		<snapshotRepository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/girishaiocdawacs/releases/</url>
+			<url>https://maven.pkg.github.com/girishaiocdawacs/snapshots/${project.artifactId}</url>
 		</snapshotRepository>
     </distributionManagement>
 
