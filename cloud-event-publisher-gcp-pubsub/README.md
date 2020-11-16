@@ -15,3 +15,20 @@
 }
 
 ```
+
+
+#### How to use java module
+
+1. add settings.xml to your ~/.m2/settings.xml
+
+2. Follow steps https://github.com/girishaiocdawacs/smart-pharmacy-event-management/packages/502802
+
+3. Add dependency to your pom
+
+```
+<dependency>
+  <groupId>com.aiocdawacs</groupId>
+  <artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
+  <version>1.0.12</version>
+</dependency>
+```
