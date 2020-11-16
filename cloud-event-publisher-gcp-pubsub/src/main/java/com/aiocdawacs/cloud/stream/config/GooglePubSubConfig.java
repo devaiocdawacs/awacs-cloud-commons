@@ -13,6 +13,7 @@ import org.springframework.cloud.gcp.pubsub.support.GcpPubSubHeaders;
 import org.springframework.cloud.gcp.pubsub.support.converter.JacksonPubSubMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.integration.annotation.MessagingGateway;
 import org.springframework.integration.annotation.ServiceActivator;
@@ -24,6 +25,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import com.aiocdawacs.cloud.stream.model.CloudEvent;
 import com.aiocdawacs.cloud.stream.service.AwacsCloudEventProviderEnum;
+import com.aiocdawacs.cloud.stream.service.CloudEventPublisherService;
 import com.aiocdawacs.cloud.stream.service.CloudEventPublisherServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -96,7 +98,9 @@ public class GooglePubSubConfig {
 	}
 	
 	@Bean
-	public CloudEventPublisherServiceImpl getCloudEventPublisherServiceImpl(PubsubOutboundGateway messagingGateway) {
+	@Primary
+	@Qualifier("cloudEventPublisherService")
+	public CloudEventPublisherService getCloudEventPublisherService(PubsubOutboundGateway messagingGateway) {
 		return new CloudEventPublisherServiceImpl(messagingGateway);
 	}
 }
