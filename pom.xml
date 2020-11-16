@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>1.0.12-SNAPSHOT</version>
+	<version>1.0.12</version>
 	
 	<name>smart-pharmacy-event-management</name>
 	

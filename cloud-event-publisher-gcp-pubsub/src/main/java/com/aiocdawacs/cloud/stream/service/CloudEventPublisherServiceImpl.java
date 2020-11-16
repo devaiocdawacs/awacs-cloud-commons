@@ -1,12 +1,12 @@
 package com.aiocdawacs.cloud.stream.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-import com.aiocdawacs.cloud.stream.config.SpringCloudStreamGcpPubSubConfig.PubsubOutboundGateway;
+import com.aiocdawacs.cloud.stream.config.GooglePubSubConfig.PubsubOutboundGateway;
 import com.aiocdawacs.cloud.stream.model.CloudEvent;
 
-@Service
+@Component
 public class CloudEventPublisherServiceImpl implements CloudEventPublisherService{
 
 	@Autowired
@@ -14,6 +14,20 @@ public class CloudEventPublisherServiceImpl implements CloudEventPublisherServic
 
 	@Override
 	public void publishMessage(CloudEvent event, AwacsCloudEventProviderEnum provider) {
-		messagingGateway.sendToPubsub(event);
+		switch(provider) {
+		case GoogleCloudPlatformPubSub:
+			messagingGateway.sendToPubsub(event);
+			break;
+		case Kafka:
+		default:
+			throw new RuntimeException("Not implemented");
+		}
 	}
+
+	public CloudEventPublisherServiceImpl(PubsubOutboundGateway messagingGateway) {
+		super();
+		this.messagingGateway = messagingGateway;
+	}
+
+	
 }

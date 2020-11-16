@@ -19,5 +19,9 @@ public enum AwacsCloudEventProviderEnum {
 	private AwacsCloudEventProviderEnum(String topicName) {
 		this.topicName = topicName;
 	}
+	
+	public String getTopicName() {
+		return topicName;
+	}
 
 }

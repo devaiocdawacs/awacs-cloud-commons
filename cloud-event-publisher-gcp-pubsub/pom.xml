@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>1.0.12-SNAPSHOT</version>
+		<version>1.0.12</version>
 	</parent>
 	
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
@@ -34,26 +34,21 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-test-support</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka-test</artifactId>
@@ -79,7 +74,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	
 	<distributionManagement>
         <repository>
@@ -88,10 +82,4 @@
             <url>https://maven.pkg.github.com/girishaiocdawacs/${project.artifactId}</url>
         </repository>
     </distributionManagement>
-
-   <build>
- 	<plugins>
-	</plugins>
-   </build>
-
 </project>
