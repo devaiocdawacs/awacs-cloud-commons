@@ -7,14 +7,5 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix="sql.awacs")
 public class AwacsMedicineOrderQueries {
-
-    private String byBulletOrderSearchQuery;
-
-	public String getByBulletOrderSearchQuery() {
-		return byBulletOrderSearchQuery;
-	}
-
-	public void setByBulletOrderSearchQuery(String byBulletOrderSearchQuery) {
-		this.byBulletOrderSearchQuery = byBulletOrderSearchQuery;
-	}
+	public String BULLET_ORDER_QUERY;
 }

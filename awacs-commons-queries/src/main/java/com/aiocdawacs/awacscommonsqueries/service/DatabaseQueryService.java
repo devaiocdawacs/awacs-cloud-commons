@@ -1,7 +1,6 @@
 package com.aiocdawacs.awacscommonsqueries.service;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,9 +30,9 @@ public class DatabaseQueryService {
 	}
 
 	@Transactional
-	public List<ProductOrderDto> getByBulletOrderSearchQuery( String title, LocalDateTime startDate) {
-		return jdbcTemplate.query( awacsMedicineOrderQueries.getByBulletOrderSearchQuery(),
-				new Object[] {title, startDate}, 
+	public List<ProductOrderDto> getByBulletOrderSearchQuery(String pharmasistCode) {
+		return jdbcTemplate.query( awacsMedicineOrderQueries.BULLET_ORDER_QUERY,
+				new Object[] {pharmasistCode}, 
 				new ResultSetExtractor<List<ProductOrderDto>>() {
 
 			@Override
@@ -42,6 +41,7 @@ public class DatabaseQueryService {
 				while(rs.next()) {
 					ProductOrderDto order = new ProductOrderDto(
 							rs.getLong("id"), 
+							rs.getString("pharmasistId"),
 							rs.getTimestamp("creation_date").toLocalDateTime());
 					orders.add(order);
 				}

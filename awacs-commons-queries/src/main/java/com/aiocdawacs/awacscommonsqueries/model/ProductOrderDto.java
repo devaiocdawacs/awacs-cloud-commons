@@ -12,12 +12,13 @@ public class ProductOrderDto {
 
 	@Id
 	Long id;
-
+	String pharmasistCode;
 	LocalDateTime creationDate;
 
-	public ProductOrderDto(Long id, LocalDateTime creationDate) {
+	public ProductOrderDto(Long id, String pharmasistCode, LocalDateTime creationDate) {
 		super();
 		this.id = id;
+		this.pharmasistCode = pharmasistCode;
 		this.creationDate = creationDate;
 	}
 
