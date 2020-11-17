@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>1.0.14-SNAPSHOT</version>
+	<version>1.0.14</version>
 	
 	<name>smart-pharmacy-event-management</name>
 	
@@ -25,6 +25,8 @@
 
 	<modules>
 		<module>cloud-event-publisher-gcp-pubsub</module>
+		<module>awacs-commons-queries</module>
+		<module>awacs-commons-web</module>
 	</modules>
 
 	<distributionManagement>

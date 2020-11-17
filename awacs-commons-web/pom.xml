@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.aiocdawacs</groupId>
+		<artifactId>smart-pharmacy-event-management</artifactId>
+		<version>1.0.14</version>
+	</parent>
+	<artifactId>awacs-commons-web</artifactId>
+	<packaging>jar</packaging>
+	<name>awacs-commons-web</name>
+	<description>common web specific code goes here</description>
+
+	<properties>
+		<java.version>8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub girishaiocdawacs Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/girishaiocdawacs/${project.artifactId}</url>
+		</repository>
+	</distributionManagement>
+</project>
