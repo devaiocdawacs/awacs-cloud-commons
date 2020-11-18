@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>1.0.17</version>
+		<version>1.0.18-SNAPSHOT</version>
 	</parent>
 	<artifactId>awacs-commons-queries</artifactId>
 	<packaging>jar</packaging>
