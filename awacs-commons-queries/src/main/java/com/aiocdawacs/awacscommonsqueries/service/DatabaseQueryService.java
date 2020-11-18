@@ -4,34 +4,34 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Service;
 
 import com.aiocdawacs.awacscommonsqueries.model.ProductOrderDto;
-import com.aiocdawacs.awacscommonsqueries.query.AwacsMedicineOrderQueries;
 
 @Service
 public class DatabaseQueryService {
 
-	private final AwacsMedicineOrderQueries awacsMedicineOrderQueries;
-	private final JdbcTemplate jdbcTemplate;
-
+	
+	@Value("${BULLET_ORDER_QUERY:}")
+	String BULLET_ORDER_QUERY;
+	
 	@Autowired
-	public DatabaseQueryService(AwacsMedicineOrderQueries awacsMedicineOrderQueries,
-			DataSource dataSource) {
-		this.awacsMedicineOrderQueries = awacsMedicineOrderQueries;
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
+	private JdbcTemplate jdbcTemplate;
+
+	public DatabaseQueryService() {
+
 	}
 
 	@Transactional
 	public List<ProductOrderDto> getByBulletOrderSearchQuery(String pharmasistCode) {
-		return jdbcTemplate.query( awacsMedicineOrderQueries.BULLET_ORDER_QUERY,
+		return jdbcTemplate.query( BULLET_ORDER_QUERY,
 				new Object[] {pharmasistCode}, 
 				new ResultSetExtractor<List<ProductOrderDto>>() {
 
