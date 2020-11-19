@@ -50,7 +50,7 @@
 		 <repository>
           <id>github</id>
           <name>GitHub Maven Packages</name>
-          <url>https://maven.pkg.github.com/girishaiocdawacs/smart-pharmacy-event-management</url>
+          <url>https://maven.pkg.github.com/girishaiocdawacs/awacs-cloud-commons</url>
         </repository>
       </repositories>
     </profile>
@@ -67,7 +67,7 @@
 
 ```
 
-2. Follow steps https://github.com/girishaiocdawacs/smart-pharmacy-event-management/packages/502802
+2. Follow steps https://github.com/girishaiocdawacs/awacs-cloud-commons/packages/502802
 
 3. Add dependency to your pom. Latest version can be crawl at here - https://github.com/girishaiocdawacs?tab=packages
 
@@ -75,6 +75,6 @@
 <dependency>
   <groupId>com.aiocdawacs</groupId>
   <artifactId>cloud-event-publisher-gcp-pubsub</artifactId>
-  <version>1.0.12</version>
+  <version>1.0.19</version>
 </dependency>
 ```
