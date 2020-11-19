@@ -4,8 +4,8 @@
 	
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
-		<artifactId>smart-pharmacy-event-management</artifactId>
-		<version>1.0.18-SNAPSHOT</version>
+		<artifactId>awacs-cloud-commons</artifactId>
+		<version>1.0.18</version>
 	</parent>
 	
 	<artifactId>cloud-event-publisher-gcp-pubsub</artifactId>

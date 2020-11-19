@@ -7,41 +7,41 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.5.RELEASE</version>
+		<version>2.4.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	
 	<groupId>com.aiocdawacs</groupId>
-	<artifactId>smart-pharmacy-event-management</artifactId>
-	<version>1.0.18-SNAPSHOT</version>
+	<artifactId>awacs-cloud-commons</artifactId>
+	<version>1.0.18</version>
 	
-	<name>smart-pharmacy-event-management</name>
+	<name>awacs-cloud-commons</name>
 	
-	<description>Awacs Cloud Event Management</description>
+	<description>Awacs Cloud Java Modules</description>
 	
 	<properties>
 		<project.scm.id>github</project.scm.id>
 	</properties>
 
 	<modules>
-		<module>cloud-event-publisher-gcp-pubsub</module>
-		<module>awacs-commons-queries</module>
-		<module>awacs-commons-web</module>
+	     <module>awacs-commons-queries</module>
+	     <module>awacs-commons-web</module>
+	     <!--module>awacs-springdoc</module-->
+	     <module>cloud-event-publisher-gcp-pubsub</module>
 	</modules>
 
 	<distributionManagement>
-        <repository>
+         <repository>
             <id>github</id>
             <name>GitHub girishaiocdawacs Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/girishaiocdawacs/{project.artifactId}</url>
-        </repository>
-    </distributionManagement>
+         </repository>
+       </distributionManagement>
 
-    <scm>
+       <scm>
         <url>https://github.com/girishaiocdawacs/${project.artifactId}</url>
         <connection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</connection>
         <developerConnection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
-    
+        <tag>HEAD</tag>
+      </scm>
 </project>
