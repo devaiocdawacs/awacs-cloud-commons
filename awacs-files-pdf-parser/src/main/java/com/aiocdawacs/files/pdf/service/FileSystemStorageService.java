@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
@@ -24,6 +25,14 @@ public class FileSystemStorageService implements StorageService {
 	@Autowired
 	public FileSystemStorageService(StorageProperties properties) {
 		this.rootLocation = Paths.get(properties.getLocation());
+		if(!Files.exists(rootLocation, LinkOption.NOFOLLOW_LINKS)) {
+			try {
+				Files.createDirectory(rootLocation);
+			} catch (IOException e) {
+				e.printStackTrace();
+				throw new RuntimeException("Neither able to find rootLocation nor able to create upload directory, can not proceed further");
+			}
+		}
 	}
 
 	@Override
