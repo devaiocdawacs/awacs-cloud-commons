@@ -56,7 +56,7 @@ public class TESTPDFBox extends PDFTextStripper {
     @Override
     protected void processTextPosition(TextPosition text) {
         Range range = Range.closed((int) text.getY(), (int) (text.getY() + text.getHeight()));
-        System.out.println("Text: " + text.getUnicode());
+        //System.out.println("Text: " + text.getUnicode());
         trapRangeBuilder.addRange(range);
     }
 }

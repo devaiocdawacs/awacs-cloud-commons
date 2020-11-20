@@ -19,6 +19,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.io.Resource;
 
 import com.aiocdawacs.files.pdf.entity.Table;
 import com.aiocdawacs.files.pdf.entity.TableCell;
@@ -59,6 +60,14 @@ public class PDFTableExtractor {
         try {
             return this.setSource(new FileInputStream(file));
         } catch (FileNotFoundException ex) {
+            throw new RuntimeException("Invalid pdf file", ex);
+        }
+    }
+    
+    public PDFTableExtractor setSource(Resource file) {
+        try {
+            return this.setSource(new FileInputStream(file.getFile()));
+        } catch (IOException ex ) {
             throw new RuntimeException("Invalid pdf file", ex);
         }
     }
