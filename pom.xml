@@ -13,13 +13,15 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
-	<version>1.0.19</version>
+	<version>1.0.20-SNAPSHOT</version>
 	
 	<name>awacs-cloud-commons</name>
 	
 	<description>Awacs Cloud Java Modules</description>
 	
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.scm.id>github</project.scm.id>
 	</properties>
 
@@ -28,6 +30,7 @@
 	     <module>awacs-commons-web</module>
 	     <!--module>awacs-springdoc</module-->
 	     <module>cloud-event-publisher-gcp-pubsub</module>
+	     <module>awacs-files-pdf-parser</module>
 	</modules>
 
 	<distributionManagement>

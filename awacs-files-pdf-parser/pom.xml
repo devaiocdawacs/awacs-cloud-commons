@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.aiocdawacs</groupId>
+		<artifactId>awacs-cloud-commons</artifactId>
+		<version>1.0.20-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>awacs-files-pdf-parser</artifactId>
+
+	<name>awacs-files-pdf-parser</name>
+
+	<description>java module for pdf parser using apache pdfbox tp read pdf file tabulated order details</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<apache.box.version>2.0.21</apache.box.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>${apache.box.version}</version>
+		</dependency>
+		  <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+		
+		</plugins>
+	</build>
+
+</project>
