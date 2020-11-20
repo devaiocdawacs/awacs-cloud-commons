@@ -7,11 +7,6 @@ package com.aiocdawacs.files.pdf.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *
- * @author Tho Mar 22, 2015 3:49:22 PM
- */
 public class Table {
 
     private final int pageIdx;

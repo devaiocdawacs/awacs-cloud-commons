@@ -28,12 +28,9 @@ import com.google.common.collect.LinkedListMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Range;
 
-/**
- *
- * @author Tho Mar 22, 2015 3:34:29 PM
- */
 public class PDFTableExtractor {
-    private final Logger logger = LoggerFactory.getLogger(PDFTableExtractor.class);
+
+	private final Logger logger = LoggerFactory.getLogger(PDFTableExtractor.class);
     //contains pages that will be extracted table content.
     //If this variable doesn't contain any page, all pages will be extracted
     private final List<Integer> extractedPages = new ArrayList<>();
@@ -112,6 +109,9 @@ public class PDFTableExtractor {
         }
         return this;
     }
+    
+    public PDFTableExtractor() {
+	}
 
     /**
      * Avoid this line in all extracted pages. LineIdx can be negative number,

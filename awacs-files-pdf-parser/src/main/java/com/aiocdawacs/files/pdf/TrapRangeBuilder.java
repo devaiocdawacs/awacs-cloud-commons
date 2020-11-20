@@ -10,20 +10,22 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.Range;
 
-/**
- *
- * @author Tho Mar 19, 2015 10:43:22 PM
- */
 public class TrapRangeBuilder {
+	
     private final Logger logger = LoggerFactory.getLogger(TrapRangeBuilder.class);
+    
     private final List<Range<Integer>> ranges = new ArrayList<>();
 
     public TrapRangeBuilder addRange(Range<Integer> range) {
         ranges.add(range);
         return this;
     }
+    
+    public TrapRangeBuilder() {
+		super();
+	}
 
-    /**
+	/**
      * The result will be ordered by lowerEndpoint ASC
      *
      * @return
