@@ -5,20 +5,16 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.apache.log4j.PropertyConfigurator;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.aiocdawacs.files.pdf.PDFTableExtractor;
 import com.aiocdawacs.files.pdf.entity.Table;
 
-/**
- *
- * @author Tho Mar 22, 2015 5:36:40 PM
- */
+@Ignore
 public class TestExtractor {
     @Test
     public void test() throws IOException {
