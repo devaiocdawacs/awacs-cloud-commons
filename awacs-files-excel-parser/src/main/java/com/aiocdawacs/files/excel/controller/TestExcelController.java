@@ -29,7 +29,7 @@ public class TestExcelController {
 		return ResponseEntity
 				.ok()
 				.contentType(MediaType.APPLICATION_OCTET_STREAM)
-				.header(HttpHeaders.CONTENT_DISPOSITION, "inline;filename=\"myfilename.xlsx\"")
+				.header(HttpHeaders.CONTENT_DISPOSITION, "inline;filename=\"hello-world.xlsx\"")
 				.body(workBook::write);
 	}
 }

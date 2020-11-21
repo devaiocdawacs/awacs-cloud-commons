@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>awacs-cloud-commons</artifactId>
-		<version>1.0.24.M3</version>
+		<version>1.0.24.M4</version>
 	</parent>
 
 	<artifactId>awacs-files-excel-parser</artifactId>
@@ -37,11 +37,11 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>${apache.poi.version}</version>
 		</dependency>
-		<dependency>
+		<!--  dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
 			<version>${apache.xmlbeans.version}</version>
-		</dependency>
+		</dependency-->
 
 		<dependency>
 			<groupId>junit</groupId>
