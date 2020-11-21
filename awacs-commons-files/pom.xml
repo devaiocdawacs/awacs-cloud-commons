@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>awacs-cloud-commons</artifactId>
-		<version>1.0.24.M2</version>
+		<version>1.0.24.M3-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>awacs-commons-files</artifactId>
@@ -23,6 +23,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
