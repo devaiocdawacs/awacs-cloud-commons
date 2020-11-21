@@ -134,7 +134,8 @@ public class PDFTableExtractor {
         return this;
     }
 
-    public List<Table> extract() {
+    @SuppressWarnings("unchecked")
+	public List<Table> extract() {
         List<Table> retVal = new ArrayList<>();
         Multimap<Integer, Range<Integer>> pageIdNLineRangesMap = LinkedListMultimap.create();
         Multimap<Integer, TextPosition> pageIdNTextsMap = LinkedListMultimap.create();

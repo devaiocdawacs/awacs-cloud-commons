@@ -1,4 +1,4 @@
-package com.aiocdawacs.files.pdf.service;
+package com.aiocdawacs.files.service;
 
 public class StorageException extends RuntimeException {
 

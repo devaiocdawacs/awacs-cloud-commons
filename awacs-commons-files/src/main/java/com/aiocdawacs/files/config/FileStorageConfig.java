@@ -1,12 +1,12 @@
-package com.aiocdawacs.files.pdf.config;
+package com.aiocdawacs.files.config;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.aiocdawacs.files.pdf.service.FileSystemStorageService;
-import com.aiocdawacs.files.pdf.service.StorageProperties;
-import com.aiocdawacs.files.pdf.service.StorageService;
+import com.aiocdawacs.files.service.FileSystemStorageService;
+import com.aiocdawacs.files.service.StorageProperties;
+import com.aiocdawacs.files.service.StorageService;
 
 @EnableConfigurationProperties(StorageProperties.class)
 @Configuration

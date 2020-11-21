@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
-	<version>1.0.24.M1</version>
+	<version>1.0.24.M2</version>
 	
 	<name>awacs-cloud-commons</name>
 	
@@ -29,9 +29,10 @@
 	<modules>
 	     <module>awacs-commons-queries</module>
 	     <module>awacs-commons-web</module>
-	     <!--module>awacs-springdoc</module-->
+		 <module>awacs-commons-files</module>
 	     <module>cloud-event-publisher-gcp-pubsub</module>
 	     <module>awacs-files-pdf-parser</module>
+		 <module>awacs-files-excel-parser</module>
 	</modules>
 
 	<distributionManagement>

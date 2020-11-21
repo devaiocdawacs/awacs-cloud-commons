@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.aiocdawacs</groupId>
+		<artifactId>awacs-cloud-commons</artifactId>
+		<version>1.0.24.M2</version>
+	</parent>
+
+	<artifactId>awacs-files-excel-parser</artifactId>
+
+	<name>awacs-files-excel-parser</name>
+
+	<description>java module for excel parser using apache poi</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<apache.poi.version>4.1.2</apache.poi.version>
+		<apache.xmlbeans.version>4.0.0</apache.xmlbeans.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.aiocdawacs</groupId>
+			<artifactId>awacs-commons-files</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${apache.poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${apache.poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>${apache.xmlbeans.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+
+		</plugins>
+	</build>
+
+</project>

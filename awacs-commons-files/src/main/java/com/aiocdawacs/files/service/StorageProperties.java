@@ -1,4 +1,4 @@
-package com.aiocdawacs.files.pdf.service;
+package com.aiocdawacs.files.service;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -8,11 +8,11 @@
 		<version>1.0.24.M2</version>
 	</parent>
 	
-	<artifactId>awacs-files-pdf-parser</artifactId>
+	<artifactId>awacs-commons-files</artifactId>
 
-	<name>awacs-files-pdf-parser</name>
+	<name>awacs-commons-files</name>
 
-	<description>java module for pdf parser using apache pdfbox tp read pdf file tabulated order details</description>
+	<description>java module for file storage service (FileSystem)</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,20 +21,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.aiocdawacs</groupId>
-			<artifactId>awacs-commons-files</artifactId>
-			<version>${project.version}</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>${apache.box.version}</version>
-		</dependency>
-		  <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>18.0</version>
-        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

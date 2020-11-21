@@ -1,4 +1,4 @@
-package com.aiocdawacs.files.pdf.service;
+package com.aiocdawacs.files.service;
 
 import java.nio.file.Path;
 import java.util.stream.Stream;

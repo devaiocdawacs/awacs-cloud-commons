@@ -1,4 +1,4 @@
-package com.aiocdawacs.files.pdf.service;
+package com.aiocdawacs.files.service;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -51,7 +51,7 @@ public class FileSystemStorageService implements StorageService {
 			}
 			try (InputStream inputStream = file.getInputStream()) {
 				Files.copy(inputStream, destinationFile,
-					StandardCopyOption.REPLACE_EXISTING);
+						StandardCopyOption.REPLACE_EXISTING);
 			}
 		}
 		catch (IOException e) {
@@ -63,8 +63,8 @@ public class FileSystemStorageService implements StorageService {
 	public Stream<Path> loadAll() {
 		try {
 			return Files.walk(this.rootLocation, 1)
-				.filter(path -> !path.equals(this.rootLocation))
-				.map(this.rootLocation::relativize);
+					.filter(path -> !path.equals(this.rootLocation))
+					.map(this.rootLocation::relativize);
 		}
 		catch (IOException e) {
 			throw new StorageException("Failed to read stored files", e);
