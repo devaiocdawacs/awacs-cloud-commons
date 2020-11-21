@@ -1,3 +1,4 @@
+
 package com.aiocdawacs.pdf.files.test;
 
 import java.io.File;
@@ -8,13 +9,11 @@ import java.io.Writer;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.aiocdawacs.files.pdf.PDFTableExtractor;
 import com.aiocdawacs.files.pdf.entity.Table;
 
-@Ignore
 public class TestExtractor {
     @Test
     public void test() throws IOException {

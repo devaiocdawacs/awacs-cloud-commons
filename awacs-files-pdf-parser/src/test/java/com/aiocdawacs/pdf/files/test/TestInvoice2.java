@@ -10,12 +10,10 @@ import org.apache.pdfbox.io.RandomAccessFile;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.aiocdawacs.files.pdf.invoice.PDFLayoutTextStripper;
 
-@Ignore
 public class TestInvoice2 {
 
     private static final int spaceTolerance = 5;

@@ -13,7 +13,7 @@
 	
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
-	<version>1.0.24.M3-SNAPSHOT</version>
+	<version>1.0.24.M3</version>
 	
 	<name>awacs-cloud-commons</name>
 	
@@ -23,7 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.scm.id>github</project.scm.id>
-		<maven.test.skip>true</maven.test.skip>
+		<!--maven.test.skip>false</maven.test.skip-->
 	</properties>
 
 	<modules>
