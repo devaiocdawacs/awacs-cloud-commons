@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException.Unauthorized;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @RestControllerAdvice
@@ -115,16 +116,21 @@ public class ControllerAdvisor extends ResponseEntityExceptionHandler {
 
 		return new ResponseEntity<Object>(body, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
+
+	@ExceptionHandler(MaxUploadSizeExceededException.class)
+	public ResponseEntity<String> handleMaxSizeException(MaxUploadSizeExceededException exc) {
+		return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new String("File too large!"));
+	}
 } 
 
 class ControllerErrorEvent extends ApplicationEvent{
 
 	private static final long serialVersionUID = 1795732886716875383L;
 	LocalDateTime eventCreationTime = LocalDateTime.now();
-	
+
 	public ControllerErrorEvent(Object source) {
 		super(source);
-		
+
 	}
 }
 
@@ -146,7 +152,7 @@ class ErrorReporterToJms implements ApplicationListener<ControllerErrorEvent> {
 	public void onApplicationEvent(ControllerErrorEvent event) {
 		jmsTemplate.convertAndSend("controller.events.error", event);
 	}
-	
+
 	/*
 	 * @JmsListener(destination = "controller.events.error") public void
 	 * subscribeJms(Message<ApplicationEvent> e) {
