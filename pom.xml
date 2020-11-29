@@ -16,6 +16,18 @@
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
 	<version>1.0.24.M7</version>
+	<developers>
+        <developer>
+            <id>girishaiocdawacs</id>
+            <name>Girish Mahajan</name>
+            <email>girish.mahajan@aiocdawacs.com</email>
+            <url>http://github.com/girishaiocdawacs</url>
+            <timezone>+5:30</timezone>
+            <roles>
+                <role>Lead Engineer</role>
+            </roles>
+        </developer>
+    </developers>
 
 	<name>awacs-cloud-commons</name>
 
