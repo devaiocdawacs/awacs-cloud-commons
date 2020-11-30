@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package com.aiocdawacs.boot.grpc.interface;
+
+option java_multiple_files = true;
+option java_package = "com.aiocdawacs.boot.grpc.lib";
+option java_outer_classname = "GrpcAwacsTokenServiceProto";
+
+import "google/protobuf/timestamp.proto";
+
+service GrpcAwacsTokenService {
+
+    rpc CheckToken (CheckTokenRequest) 
+    	returns (CheckTokenReply) {
+    	
+    	}
+}
+
+message CheckTokenRequest {
+    string token = 1;
+}
+
+message CheckTokenReply {
+  string username = 1;
+  bool approved = 2;
+  string client_id = 3;
+  Authority authorities = 4;
+  Scope scope = 5;
+  google.protobuf.Timestamp exp = 6;
+  string whoami = 7;
+}
+
+message Scope {
+  repeated string scope = 1;
+}
+message Authority {
+   repeated string authority = 1;
+}

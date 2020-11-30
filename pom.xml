@@ -15,7 +15,7 @@
 
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
-	<version>1.0.24.M7</version>
+	<version>1.0.25.M1</version>
 	<developers>
         <developer>
             <id>girishaiocdawacs</id>
@@ -51,6 +51,7 @@
 		<module>cloud-event-publisher-gcp-pubsub</module>
 		<module>awacs-files-pdf-parser</module>
 		<module>awacs-files-excel-parser</module>
+		<module>awacs-grpc-interface</module>
 	</modules>
 
 	<distributionManagement>
