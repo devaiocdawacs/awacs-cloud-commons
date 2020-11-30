@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>awacs-cloud-commons</artifactId>
-		<version>1.0.25.M1</version>
+		<version>1.0.25.M2</version>
 	</parent>
-	<artifactId>awacs-grpc-server</artifactId>
+	<artifactId>awacs-grpc-interface</artifactId>
 	<packaging>jar</packaging>
-	<name>awacs-grpc-server</name>
-	<description>grpc server implementation</description>
+	<name>awacs-grpc-interface</name>
+	<description>grpc server interface proto implementation</description>
 
 	<properties>
 		<java.version>8</java.version>
