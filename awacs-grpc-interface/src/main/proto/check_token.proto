@@ -29,7 +29,7 @@ message CheckTokenReply {
   Scope scope = 5;
   google.protobuf.Timestamp exp = 6;
   string whoami = 7;
-  string aud = 8;
+  repeated string aud = 8;
   string jti = 9;
 }
 
