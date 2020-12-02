@@ -10,14 +10,15 @@ import "google/protobuf/timestamp.proto";
 
 service GrpcAwacsTokenService {
 
-    rpc CheckToken (CheckTokenRequest) 
+    rpc CheckToken (CheckTokenRequest)
     	returns (CheckTokenReply) {
-    	
+
     	}
 }
 
 message CheckTokenRequest {
     string token = 1;
+    string source = 2;
 }
 
 message CheckTokenReply {
@@ -28,6 +29,8 @@ message CheckTokenReply {
   Scope scope = 5;
   google.protobuf.Timestamp exp = 6;
   string whoami = 7;
+  string aud = 8;
+  string jti = 9;
 }
 
 message Scope {
