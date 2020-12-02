@@ -15,7 +15,7 @@
 
 	<groupId>com.aiocdawacs</groupId>
 	<artifactId>awacs-cloud-commons</artifactId>
-	<version>1.0.25.M4</version>
+	<version>1.0.25.M5</version>
 	<developers>
         <developer>
             <id>girishaiocdawacs</id>

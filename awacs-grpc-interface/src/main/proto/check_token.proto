@@ -22,20 +22,13 @@ message CheckTokenRequest {
 }
 
 message CheckTokenReply {
-  string username = 1;
-  bool approved = 2;
-  string client_id = 3;
-  Authority authorities = 4;
-  Scope scope = 5;
-  google.protobuf.Timestamp exp = 6;
-  string whoami = 7;
-  repeated string aud = 8;
-  string jti = 9;
-}
-
-message Scope {
-  repeated string scope = 1;
-}
-message Authority {
-   repeated string authority = 1;
+  repeated string aud = 1;
+  string user_name = 2;
+  repeated string scope = 3;
+  bool active = 4;
+  google.protobuf.Timestamp exp = 5;
+  repeated string authorities = 6;
+  string jti = 7;
+  string client_id = 8;
+  string whoami = 9;
 }
