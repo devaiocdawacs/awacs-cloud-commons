@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.aiocdawacs</groupId>
 		<artifactId>awacs-cloud-commons</artifactId>
-		<version>1.0.25.M5</version>
+		<version>1.0.26</version>
 	</parent>
 	<artifactId>awacs-commons-web</artifactId>
 	<packaging>jar</packaging>
@@ -33,6 +33,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+		<dependency> <!-- Nirav shah suggestion to add in all apps -->
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
 	</dependencies>
 
