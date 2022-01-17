@@ -44,7 +44,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub girishaiocdawacs Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/girishaiocdawacs/${project.artifactId}</url>
+			<url>https://maven.pkg.github.com/devaiocdawacs/${project.artifactId}</url>
 		</repository>
 	</distributionManagement>
 </project>
