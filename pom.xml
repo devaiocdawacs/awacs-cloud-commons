@@ -18,10 +18,10 @@
 	<version>1.0.28</version>
 	<developers>
         <developer>
-            <id>girishaiocdawacs</id>
+            <id>devaiocdawacs</id>
             <name>Girish Mahajan</name>
             <email>girish.mahajan@aiocdawacs.com</email>
-            <url>http://github.com/girishaiocdawacs</url>
+            <url>http://github.com/devaiocdawacs</url>
             <timezone>+5:30</timezone>
             <roles>
                 <role>Lead Engineer</role>
@@ -57,15 +57,15 @@
 	<distributionManagement>
 		<repository>
 			<id>github</id>
-			<name>GitHub girishaiocdawacs Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/girishaiocdawacs/{project.artifactId}</url>
+			<name>GitHub devaiocdawacs Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/devaiocdawacs/{project.artifactId}</url>
 		</repository>
 	</distributionManagement>
 
 	<scm>
-		<url>https://github.com/girishaiocdawacs/${project.artifactId}</url>
-		<connection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</connection>
-		<developerConnection>scm:git:https://github.com/girishaiocdawacs/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/devaiocdawacs/${project.artifactId}</url>
+		<connection>scm:git:https://github.com/devaiocdawacs/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:https://github.com/devaiocdawacs/${project.artifactId}.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
